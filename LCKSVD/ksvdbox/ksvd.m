@@ -279,9 +279,9 @@ end
 
 % status messages %
 
-printiter = 1
+printiter = 0 ;
 printreplaced = 0;
-printerr = 1;
+printerr = 0;
 printgerr = 0;
 
 verbose = 't';

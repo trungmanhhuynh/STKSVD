@@ -13,12 +13,14 @@ if(machine == 1)
     %% Draw Tracking Results
     out_path = ['./Results/' sequenceName '/'];
 else
-    det_path =[ '/home/manh/Research/Dataset/MOTchallenge2015/2DMOT2015/' sequenceName '/det/det.txt' ] ;
+    dataset_name = 'MOT16'
+
+    det_path =[ '../datasets/', dataset_name , '/test/',  sequenceName , '/det/det.txt' ] 
     detections = read_detection_file(det_path) ;
-    img_path = ['/home/manh/Research/Dataset/MOTchallenge2015/2DMOT2015/' sequenceName '/img1/' ];
+    img_path = ['../datasets/', dataset_name , '/test/', sequenceName ,'/img1/' ];
     img_List = dir(strcat(img_path,'*.jpg'));
     %% Draw Tracking Results
-    out_path = ['./Results/' sequenceName '/'];
+    out_path = ['./Results/', dataset_name, '/test/', sequenceName,'/'];
  
 end
 %% Common parameter
