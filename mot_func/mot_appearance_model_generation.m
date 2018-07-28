@@ -33,11 +33,11 @@ for j=1:numberOfDetections
     h = round(state(4,j))    ;
     xl = max([xc - round(w/2), 1]) ;
     yl = max([yc - round(h/2), 1]) ;
-
+    
     
     %get bounding box for upper part and lower part
-    upperpart = hsv_img(yl:yl + round(h/2) , xl:min([xl+w , imgWidth]),:);
-    lowerpart = hsv_img(yl + round(h/2):min([yl + h, imgHeight]),xl:min([xl+w, imgWidth]),:);
+    upperpart = hsv_img(yl:min(yl + round(h/2), imgHeight) , xl:min([xl+w , imgWidth]),:);
+    lowerpart = hsv_img(yl + round(h/2):min(yl + h, imgHeight),xl:min([xl+w, imgWidth]),:);
     
     lowerhist = [] ;
     upperhist = [] ;

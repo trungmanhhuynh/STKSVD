@@ -11,7 +11,7 @@ addpath(genpath(base));
 
 mot_setting_params;
 
-frame_start = 1 ;
+frame_start = 1;
 if length(img_List) > 10
     frame_end = length(detections);
 else
@@ -113,7 +113,7 @@ AverageTime = TotalTime/(frame_start + frame_end);
 disp([sprintf('Average running time:%.3f(sec/frame)', AverageTime)]);
 
 %% Save tracking results
-dlmwrite(['./' sequenceName '.txt'], result,'delimiter',',') ;
+dlmwrite(['./Results/Euclidean/MOT17/test/' sequenceName '.txt'], result,'delimiter',',') ;
 
 
 end 

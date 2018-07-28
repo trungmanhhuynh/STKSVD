@@ -41,7 +41,7 @@ end
 D = [] ;D_states = [] ; D_fr = [];
 dict_labels = [];
 classList = [] ;
-nAtoms = 15 ;
+nAtoms = 5 
 for labelId = 1:max(training_labels)
     dataId = find(training_labels == labelId);
     if size(dataId,2) > nAtoms
@@ -61,7 +61,7 @@ H_train(sum(H_train,2) == 0,:) = [];
 
 LCKSVDparam.K =  size(D ,2) ;                             % dictionary size
 LCKSVDparam.sparsitythres         = ceil(0.1* LCKSVDparam.K);           % number of coefficients
-LCKSVDparam.numIteration = 10;                              % number of iterations
+LCKSVDparam.numIteration = 5;                              % number of iterations
 LCKSVDparam.dictLabels = dict_labels ;
 LCKSVDparam.dataLabels = training_labels ;
 LCKSVDparam.D_states = D_states ;

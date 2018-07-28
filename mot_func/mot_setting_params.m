@@ -13,14 +13,15 @@ if(machine == 1)
     %% Draw Tracking Results
     out_path = ['./Results/' sequenceName '/'];
 else
-    dataset_name = 'MOT16'
+    dataset_name = 'MOT17'
 
-    det_path =[ '../datasets/', dataset_name , '/test/',  sequenceName , '/det/det.txt' ] 
+
+    det_path =[ '../datasets/', dataset_name , '/train/',  sequenceName , '/det/det.txt' ] 
     detections = read_detection_file(det_path) ;
-    img_path = ['../datasets/', dataset_name , '/test/', sequenceName ,'/img1/' ];
+    img_path = ['../datasets/', dataset_name , '/train/', sequenceName ,'/img1/' ];
     img_List = dir(strcat(img_path,'*.jpg'));
     %% Draw Tracking Results
-    out_path = ['./Results/', dataset_name, '/test/', sequenceName,'/'];
+    out_path = ['./Results/', dataset_name, '/train/', sequenceName,'/'];
  
 end
 %% Common parameter
@@ -102,7 +103,7 @@ param.use_KSVD = 0 ;
 KSVDparam.n_update  = 0 ;
 
 %% LCKSVD parameters
-param.use_LCKSVD = 1 ;
+param.use_LCKSVD =0 ;
 LCKSVDparam.n_update  = 0 ;
 LCKSVDparam.sqrt_alpha = 4 ; % weights for label constraint term
 LCKSVDparam.sqrt_beta = 2; % weights for classification err term
