@@ -1,6 +1,5 @@
 function [matching, score] = mot_association_hungarian(score_mat, thr)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved
+
 % Association using the hungarian algorithm
 
 if size(score_mat,1) ==1

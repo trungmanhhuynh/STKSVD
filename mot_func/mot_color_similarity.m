@@ -1,6 +1,4 @@
 function [likelihood] = mot_color_similarity(refer_hist,target_hist,var)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
 
 
 if nargin >2

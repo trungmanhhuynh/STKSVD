@@ -1,6 +1,5 @@
 function [bg_image] = mot_draw_confidence_boxes(bg_image, wind_lx,wind_ly,windw,windh,Labels,conf)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
+
 
 
 rectcolor = jet(16)*255;

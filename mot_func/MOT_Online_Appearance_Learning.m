@@ -1,6 +1,5 @@
 function [ILDA] = MOT_Online_Appearance_Learning(cimg,img_path, img_List, fr, Trk, param, ILDA)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
+
 
 if ILDA.n_update == 0
     for i=1:length(Trk)

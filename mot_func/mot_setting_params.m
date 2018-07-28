@@ -1,5 +1,3 @@
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
 
 %% Get image lists
 machine = 2; % 1 : run on windows

@@ -1,6 +1,4 @@
 function [Trk] = MOT_Confidence_Update(Trk,param,fr,lambda)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
 
 if nargin < 4
     lambda = 1.2;

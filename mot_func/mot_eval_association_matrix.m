@@ -1,6 +1,5 @@
 function [score_mat] = mot_eval_association_matrix(stage,trackId, Refer,Test,param,type,KSVDparam,LCKSVDparam,withMotion)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
+
 test_feats = [] ;
 D = [ ]; W= [] ;
 

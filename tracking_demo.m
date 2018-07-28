@@ -1,9 +1,3 @@
-%% Robust Online Multi-Object Tracking based on Tracklet Confidence
-%% and Online Discriminative Appearance Learning (CVPR2014)
-% Last updated date: 2014. 07. 27
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
-
 
 function tracking_demo(sequenceName)
 base = [pwd, '/'];

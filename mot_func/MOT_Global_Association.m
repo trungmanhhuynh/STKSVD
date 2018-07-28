@@ -1,7 +1,4 @@
-
 function [Trk, Obs_grap] = MOT_Global_Association(Trk, Obs_grap, Obs_info, param, KSVDparam, LCKSVDparam,fr)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
 
 Refer =[]; Test= [];
 all_indx = 1:length(Trk);

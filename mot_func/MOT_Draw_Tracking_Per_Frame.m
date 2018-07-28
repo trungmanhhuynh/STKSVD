@@ -1,6 +1,5 @@
 function [result] = MOT_Draw_Tracking_Per_Frame(Trk_sets, out_path, img_path, img_List, option)
-%% Copyright (C) 2014 Seung-Hwan Bae
-%% All rights reserved.
+
 
 % Draw Tracking Results
 if ~isfield(option,'new_thr');
